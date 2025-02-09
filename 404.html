@@ -9,28 +9,9 @@
     
     <script>
       // Ensure the path only redirects once
-      const redirectPath = '/BMA';
+      const redirectPath = '/LMS';
       const currentPath = location.pathname.replace(redirectPath, '');
       window.location.href = `${redirectPath}${currentPath}${location.search}${location.hash}`;
     </script>
   </body>
 </html>
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Not Found</title>
-  </head>
-  <body>
-    <script>
-      // Ensure the path only redirects once and works within the /LMS base
-      const redirectPath = '/LMS';
-      const currentPath = location.pathname.replace(redirectPath, '');
-      window.location.href = `${redirectPath}#${currentPath}${location.search}${location.hash}`;
-    </script>    
-  </body>
-</html>
- -->
