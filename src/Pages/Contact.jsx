@@ -24,11 +24,6 @@ const sendMessageToUser = async (data, setUserInput) => {
       const result = await response.json();
       if (result.ok) {
           toast.success("Message sent successfully!");
-          setUserInput({   // ✅ Corrected syntax
-            name: "",
-            phone: "",
-            message: "",
-          });
       } else {
           toast.error("Failed to send message.");
           console.error("Telegram API error:", result);
